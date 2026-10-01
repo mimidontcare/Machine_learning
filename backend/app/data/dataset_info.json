@@ -1,0 +1,114 @@
+{
+  "name": "Rice (Cammeo and Osmancik)",
+  "uci_id": 545,
+  "description": "Tập dữ liệu gồm 3.810 mẫu hạt lúa thuộc hai giống lúa nổi tiếng của Thổ Nhĩ Kỳ: Cammeo và Osmancik. Bằng kỹ thuật xử lý ảnh độ phân giải cao, 7 đặc trưng hình thái học (morphological features) đã được trích xuất để phục vụ phân loại tự động.",
+  "total_samples": 3810,
+  "features_count": 7,
+  "classes": [
+    "Cammeo",
+    "Osmancik"
+  ],
+  "class_distribution": {
+    "Cammeo": 1630,
+    "Osmancik": 2180
+  },
+  "features": [
+    {
+      "name": "Area",
+      "vietnamese_name": "Diện tích hạt",
+      "unit": "pixel²",
+      "description": "Số lượng pixel nằm bên trong ranh giới của hạt lúa.",
+      "min": 7551.0,
+      "max": 18913.0,
+      "mean": 12667.8,
+      "sample_cammeo": 16341.0,
+      "sample_osmancik": 9470.0
+    },
+    {
+      "name": "Perimeter",
+      "vietnamese_name": "Chu vi hạt",
+      "unit": "pixel",
+      "description": "Tổng chiều dài đường bao quanh hạt lúa.",
+      "min": 359.1,
+      "max": 548.4,
+      "mean": 454.2,
+      "sample_cammeo": 494.5,
+      "sample_osmancik": 382.9
+    },
+    {
+      "name": "Major_Axis_Length",
+      "vietnamese_name": "Chiều dài trục chính",
+      "unit": "pixel",
+      "description": "Khoảng cách lớn nhất giữa hai điểm bất kỳ trên đường viền hạt.",
+      "min": 145.2,
+      "max": 239.0,
+      "mean": 201.8,
+      "sample_cammeo": 219.8,
+      "sample_osmancik": 149.6
+    },
+    {
+      "name": "Minor_Axis_Length",
+      "vietnamese_name": "Chiều dài trục phụ",
+      "unit": "pixel",
+      "description": "Khoảng cách ngắn nhất vuông góc với trục chính của hạt.",
+      "min": 59.5,
+      "max": 107.5,
+      "mean": 81.1,
+      "sample_cammeo": 95.8,
+      "sample_osmancik": 80.8
+    },
+    {
+      "name": "Eccentricity",
+      "vietnamese_name": "Độ lệch tâm",
+      "unit": "tỉ lệ (0-1)",
+      "description": "Độ dẹt của hình elip bao quanh hạt (giá trị càng gần 1 hạt càng thon dài, gần 0 hạt càng tròn).",
+      "min": 0.777,
+      "max": 0.948,
+      "mean": 0.887,
+      "sample_cammeo": 0.899,
+      "sample_osmancik": 0.841
+    },
+    {
+      "name": "Convex_Area",
+      "vietnamese_name": "Diện tích đa giác lồi",
+      "unit": "pixel²",
+      "description": "Số lượng pixel trong đa giác lồi nhỏ nhất bao phủ toàn bộ hạt gạo.",
+      "min": 7723.0,
+      "max": 19097.0,
+      "mean": 12952.5,
+      "sample_cammeo": 16752.0,
+      "sample_osmancik": 9691.0
+    },
+    {
+      "name": "Extent",
+      "vietnamese_name": "Tỉ lệ chiếm chỗ (Extent)",
+      "unit": "tỉ lệ (0-1)",
+      "description": "Tỉ lệ giữa diện tích hạt lúa và diện tích hình chữ nhật nhỏ nhất bao quanh nó.",
+      "min": 0.498,
+      "max": 0.861,
+      "mean": 0.662,
+      "sample_cammeo": 0.601,
+      "sample_osmancik": 0.730
+    }
+  ],
+  "sample_presets": {
+    "Cammeo": {
+      "Area": 16341.0,
+      "Perimeter": 494.5,
+      "Major_Axis_Length": 219.8,
+      "Minor_Axis_Length": 95.8,
+      "Eccentricity": 0.899,
+      "Convex_Area": 16752.0,
+      "Extent": 0.601
+    },
+    "Osmancik": {
+      "Area": 9470.0,
+      "Perimeter": 382.9,
+      "Major_Axis_Length": 149.6,
+      "Minor_Axis_Length": 80.8,
+      "Eccentricity": 0.841,
+      "Convex_Area": 9691.0,
+      "Extent": 0.730
+    }
+  }
+}
